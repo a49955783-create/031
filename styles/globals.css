@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html,body,#__next{height:100%}
+body{ @apply bg-ink text-white font-sans; }
+.btn{ @apply px-4 py-2 rounded-lg transition active:scale-95 disabled:opacity-50; }
+.btn-primary{ @apply bg-violet hover:bg-violet/90 text-white; }
+.btn-green{ @apply bg-ok hover:bg-ok/90 text-white; }
+.btn-red{ @apply bg-danger hover:bg-danger/90 text-white; }
+.btn-ghost{ @apply bg-card hover:bg-card/80 text-white; }
+.card{ @apply bg-card rounded-xl shadow-soft border border-line/30; }
+.field{ @apply w-full bg-slab/60 border border-line/40 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-police; }
+.heading{ @apply text-blue-200 font-bold }
+@keyframes fadeZoom { from{opacity:0; transform:scale(.96)} to{opacity:1; transform:scale(1)} } .animate-fadeZoom{ animation:fadeZoom .6s ease both; }
